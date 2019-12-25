@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Youtube Content Analysis</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+        rel="stylesheet" />
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet" />
+    <link rel="icon" href="https://cdn.icon-icons.com/icons2/1584/PNG/512/3721679-youtube_108064.png" type="image/png">
+
+    <!-- Custom Stylesheet -->
+</head>
+
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light white sticky-top">
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="/"><i class="fab fa-youtube">Youtube Content Analysis</i></a>
+
+        <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+            aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="basicExampleNav">
+            <!-- Links -->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">About
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- Links -->
+        </div>
+        <!-- Collapsible content -->
+    </nav>
+    <!--/.Navbar-->
+
+
+    <div class="row" style="margin-top: 8rem;">
+        <div class="col-md-12">
+            <p class="h1-responsive" style="text-align: center;">Result</p>
+        </div>
+        <div class="col-md-12">
+            <p class="text-muted" style="text-align: center;"><h2 align="center"><font color="#3333cc">{{result}}</font></h2></p>
+            <p class="text-muted" style="text-align: center;">{{url}}</p>
+        </div>
+        <div class="col-md-12" style="text-align: center;">
+            <a href="/" class="btn btn-outline-info waves-effect">Go Back</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <!--Mask with wave-->
+          
+            <div class="view overlay">
+                <img src={{f2}} class="img-fluid" alt="Sample image with waves effect." style="margin: 0 auto;
+    margin-top: 1rem;height: 20rem;">
+                <a>
+                    <div class="mask waves-effect waves-light rgba-white-slight"></div>
+                </a>
+            </div>
+             
+            <div class="view overlay">
+                <img src={{f3}} class="img-fluid" alt="Sample image with waves effect." style="margin: 0 auto;
+    margin-top: 1rem;height: 20rem;">
+                <a>
+                    <div class="mask waves-effect waves-light rgba-white-slight"></div>
+                </a>
+            </div>
+            <div class="view overlay">
+                <img src={{f4}} class="img-fluid" alt="Sample image with waves effect." style="margin: 0 auto;
+    margin-top: 1rem;height: 20rem;">
+                <a>
+                    <div class="mask waves-effect waves-light rgba-white-slight"></div>
+                </a>
+            </div>
+            <div class="view overlay">
+                <img src={{f5}} class="img-fluid" alt="Sample image with waves effect." style="margin: 0 auto;
+    margin-top: 1rem;height: 20rem;">
+                <a>
+                    <div class="mask waves-effect waves-light rgba-white-slight"></div>
+                </a>
+            </div>
+            <div class="view overlay">
+                <img src={{f6}} class="img-fluid" alt="Sample image with waves effect." style="margin: 0 auto;
+    margin-top: 1rem;height: 20rem;">
+                <a>
+                    <div class="mask waves-effect waves-light rgba-white-slight"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small special-color-dark pt-4">
+
+        <!-- Footer Elements -->
+        <div class="container">
+
+            <!-- Social buttons -->
+            <ul class="list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-fb mx-1">
+                        <i class="fab fa-facebook-f"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-tw mx-1">
+                        <i class="fab fa-twitter"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-gplus mx-1">
+                        <i class="fab fa-google-plus-g"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-li mx-1">
+                        <i class="fab fa-linkedin-in"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-dribbble mx-1">
+                        <i class="fab fa-dribbble"> </i>
+                    </a>
+                </li>
+            </ul>
+            <!-- Social buttons -->
+
+        </div>
+        <!-- Footer Elements -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+            <a href="https://mdbootstrap.com/" style="color: white;font-weight: bold;">MD Bootstrap</a>
+            <br />
+            <a href="http://www.freepik.com" style="color: white;font-weight: bold;">Designed by
+                pikisuperstar / Freepik</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
+</body>
+
+</html>
