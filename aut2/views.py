@@ -26,9 +26,13 @@ def home(request):
     return render(request,'home.html')
 
 def result(request):
-    nm=request.GET['url']
-    csvfilename=nm+".csv"
+    #nm=request.GET['url']
+    process=request.GET['url']
+    nm=process.replace("https://www.youtube.com/watch?v=",'') 
 
+    nm=nm.replace("https://m.youtube.com/watch?v=",'') 
+    csvfilename=nm+".csv"
+    
     imgname=nm+'.png'
     img="/"+imgname
     location="static/"+imgname
