@@ -53,7 +53,15 @@ def result(request):
     #nm="amazonextraction/" + nm
     
     import re
-    data=YouTubeTranscriptApi.get_transcript(nm,languages=['en'])
+    try:
+        data=YouTubeTranscriptApi.get_transcript(nm,languages=['en'])
+    except:
+        print("An exception occurred")
+        return render(request,'errorpage.html')
+
+
+
+    #data=YouTubeTranscriptApi.get_transcript(nm,languages=['en'])
     csvfilename=nm+".csv"
     for i in range(len(data)):
         with open (csvfilename,'a',encoding="utf-8") as res:        
