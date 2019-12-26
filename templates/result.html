@@ -60,7 +60,18 @@
         <div class="col-md-12">
             <p class="text-muted" style="text-align: center;"><h2 align="center"><font color="#3333cc">{{result}}</font></h2></p>
             <p class="text-muted" style="text-align: center;">{{url}}</p>
+            <ol> 
+                <li>Start, End</li>
+                <!-- For loop logic of jinja template -->
+                {%  for i in start  %} 
+   
+                    <li>{{i}}</li> 
+                {%endfor%} 
+        
+                
+                </ol> 
         </div>
+
         <div class="col-md-12" style="text-align: center;">
             <a href="/" class="btn btn-outline-info waves-effect">Go Back</a>
         </div>

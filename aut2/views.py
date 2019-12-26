@@ -394,11 +394,35 @@ def result(request):
     fig.savefig(location4, bbox_inches='tight')
     
 
+    #display cut timings.
 
+    offen=df[df['nature']=='offensive_speech']
+    name="offensive"+csvfilename
+    offen.to_csv(name)
+    odf=pd.read_csv(name)   
+    S=odf['start']
+    D=odf['duration']
+    E=odf['end']
+    startli=[]
+    durationli=[]
+    endli=[]
+    for i in range(len(odf)):
+        startli.append(S[i])
+        durationli.append(D[i])
+        endli.append(E[i])
+    startli=startli
+    endli=endli    
+    print (len(startli))
+    print (len(endli))
 
-
+    lis=[]
+    for i in range(len(startli)):
+        srt=f"{startli[i]}"+"  "+f"{endli[i]}"
+        lis.append(srt)
+    #d=dict(zip(startli,endli))
+    #print (d)
     #return render(request,'result.html',{'result':'Real-time analysis successfull','url':nm,'filename':loc,'f2':imgname})
-    return render(request,'result.html',{'result':'Real-time analysis successfull','f2':loc,'f3':loc1,'f4':loc2,'f5':loc3,'f6':loc4})
+    return render(request,'result.html',{'result':'Real-time analysis successfull','f2':loc,'f3':loc1,'f4':loc2,'f5':loc3,'f6':loc4,'len':range(len(startli)),'start':lis,'end':endli,'duration':durationli})
 
 def about(request):
     return render(request,'about.html')    
